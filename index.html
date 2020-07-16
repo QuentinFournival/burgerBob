@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>burger bob</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <meta content="IE=edge" http-equiv=X-UA-Compatible>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    <!--[if IE 7]>
+        <link href="css/stylesie7.css" rel="stylesheet" type="text/css" media="screen">
+    <![endif]-->
+</head>
+<body>
+<main>
+<div class="drapeau flex">
+    <img class="france" src="https://images.emojiterra.com/google/android-10/128px/1f1eb-1f1f7.png" alt="">
+    <img class="portugal" src="https://images.emojiterra.com/google/android-10/128px/1f1f5-1f1f9.png" alt="">
+    <img class="anglais" src="https://images.emojiterra.com/google/android-10/128px/1f1ec-1f1e7.png" alt="">
+</div>
+<div class="center">
+
+<div class="titre">
+    <h1>bobs burgers</h1>
+</div>
+<div class="container flex">
+   
+  
+       <div class="gauche">
+           <h1 class="pt">bobs fãs montam so seu jeito</h1>
+           <h1 class="fr textoff">Les fans de bob's choississent leur chemin </h1>
+           <h1 class="en textoff">Bob's fans are on the road </h1>
+           <div class="dot flex">
+           <span class="active quatre"></span>
+           <span class="normal un"></span>
+           <span class="normal deux"></span>
+           <span class="normal trois"></span>
+           </div>
+           <h2 class="pt">combina com:</h2>
+           <h2 class="fr textoff">correspond avec:</h2>
+           <h2 class="en textoff">matches with:</h2>
+           <p>bob's max ovomaltine</p>
+           <div class="containergaucheimg">
+           <img src="imgs/menu.png" alt="">
+           </div>
+       </div>
+       <div class="centre">
+      <div class="containerimage flex">
+       <img  src="imgs/burgerb.png" alt="">
+       <img  src="imgs/burgerpres.png" alt="">
+       <img  src="imgs/pngwave%20(1).png" alt="">
+       <img  src="imgs/pngwave%20(3).png" alt="">
+       </div>
+       <div class="ombre"></div>
+       <div class="button flex">
+        <a class="pt" href="">GARANTA O SEU GRAN PICANHA</a>
+        <a class="fr textoff" href="">réservez votre grand picanha</a>
+        <a class="en textoff" href="">book your grand picanha</a>
+        </div>
+   </div>
+       <div class="droite">
+           <h2>50%</h2>
+           <h1 class="pt">desconto <strong> <span> gran </span> picanha</strong></h1>
+           <h1 class="fr textoff">de remise sur <strong> <span> gran </span> picanha</strong></h1>
+           <h1 class="en textoff">discount on <strong> <span> gran </span> picanha</strong></h1>
+           <p class="pt">bob's fã saboreiam seu sanduiche prefileto com desconto exclusivo.</p>
+           <p class="fr textoff">Les fans de Bob savoure leur sandwich préféré avec une remise exclusive.</p>
+           <p class="en textoff">Bob fans enjoy their favorite sandwich with an exclusive discount.</p>
+       </div>
+   
+</div>
+</div>
+
+
+
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function(){
+            
+             $(".un").click(function(){
+                $(".containerimage").addClass("un");
+                $(".containerimage").removeClass("quatre");
+                $(".containerimage").removeClass("trois");
+                $(".containerimage").removeClass("deux");
+                 $('span.un').addClass("active");
+                 $('span.un').removeClass("normal");
+                 $('span.quatre').removeClass("active");
+                 $('span.deux').removeClass("active");
+                 $('span.trois').removeClass("active");
+                 $('span.quatre').addClass("normal");
+                 $('span.deux').addClass("normal");
+                 $('span.trois').addClass("normal");
+                return false;
+            });
+            $(".deux").click(function(){
+                $(".containerimage").addClass("deux");
+                $(".containerimage").removeClass("un");
+                $(".containerimage").removeClass("trois");
+                $(".containerimage").removeClass("quatre");
+                 $('span.deux').addClass("active");
+                 $('span.deux').removeClass("normal");
+                 $('span.quatre').removeClass("active");
+                 $('span.un').removeClass("active");
+                 $('span.trois').removeClass("active");
+                 $('span.quatre').addClass("normal");
+                 $('span.un').addClass("normal");
+                 $('span.trois').addClass("normal");
+                return false;
+            });
+            
+            $(".trois").click(function(){
+                $(".containerimage").addClass("trois");
+                $(".containerimage").removeClass("deux");
+                $(".containerimage").removeClass("quatre");
+                $(".containerimage").removeClass("un");
+                 $('span.trois').addClass("active");
+                 $('span.trois').removeClass("normal");
+                 $('span.quatre').removeClass("active");
+                 $('span.deux').removeClass("active");
+                 $('span.un').removeClass("active");
+                 $('span.quatre').addClass("normal");
+                 $('span.un').addClass("normal");
+                 $('span.deux').addClass("normal");
+                return false;
+            });
+            $(".quatre").click(function(){
+                $(".containerimage").addClass("quatre");
+                $(".containerimage").removeClass("trois");
+                $(".containerimage").removeClass("deux");
+                $(".containerimage").removeClass("un");
+                 $('span.quatre').addClass("active");
+                 $('span.quatre').removeClass("normal");
+                 $('span.trois').removeClass("active");
+                 $('span.deux').removeClass("active");
+                 $('span.un').removeClass("active");
+                 $('span.deux').addClass("normal");
+                 $('span.un').addClass("normal");
+                 $('span.trois').addClass("normal");
+                return false;
+            });
+            
+            
+         $(".france").click(function(){
+                $(".fr").addClass("texton");
+                $(".fr").removeClass("textoff");
+                $(".en").addClass("textoff");
+                $(".en").removeClass("texton");
+                $(".pt").addClass("textoff");
+                $(".pt").removeClass("texton");
+                
+                return false;
+            });
+            $(".portugal").click(function(){
+                $(".pt").addClass("texton");
+                $(".pt").removeClass("textoff");
+                $(".en").addClass("textoff");
+                $(".en").removeClass("texton");
+                $(".fr").addClass("textoff");
+                $(".fr").removeClass("texton");
+                
+                return false;
+            });
+            $(".anglais").click(function(){
+                $(".en").addClass("texton");
+                $(".en").removeClass("textoff");
+                $(".fr").addClass("textoff");
+                $(".fr").removeClass("texton");
+                $(".pt").addClass("textoff");
+                $(".pt").removeClass("texton");
+                
+                return false;
+            });
+           
+
+                
+        });
+        
+     
+            
+
+    
+       
+    </script>
+</body>
+</html>
+
+
